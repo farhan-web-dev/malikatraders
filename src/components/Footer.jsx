@@ -8,7 +8,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer id="footer" className="site-footer">
       <div className="footer-container">
         <div className="brand-col">
           <div className="logo-placeholder">MAT</div>

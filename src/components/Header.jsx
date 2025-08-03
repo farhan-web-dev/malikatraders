@@ -14,7 +14,7 @@ export default function Header() {
           </h1>
         </div>
         <div className="cta">
-          <a href="#contact" className="contact-btn">
+          <a href="#footer" className="contact-btn">
             Contact Us
           </a>
         </div>
