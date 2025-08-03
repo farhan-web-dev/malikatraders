@@ -1,13 +1,19 @@
 :root {
-  --accent: #4f7fff; /* vibrant blue accent */
-  --bg: #f7f8fa; /* very light gray background */
+  --accent: #3b76ff;
+  --bg: #f7f8fa;
   --radius: 8px;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow-color: rgba(79, 127, 255, 0.35);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  --shadow-color: rgba(59, 118, 255, 0.35);
+
+  font-family: "Aldrich", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+.title-wrap {
+  display: flex;
+  flex-direction: column; /* ensures vertical stacking */
+  position: relative;
+}
 .site-header {
   background: white;
   padding: 12px 24px;
@@ -41,17 +47,22 @@
   flex-shrink: 0;
 }
 
-.animated-title {
-  position: relative;
-  margin: 0;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1.1;
+/* NEW: Wrapper for title and subtitle */
+.title-wrap {
   display: flex;
   flex-direction: column;
-  overflow: visible;
-  animation: pulse 4s ease-in-out infinite;
+  position: relative;
+}
+
+.animated-title {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000d7;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  line-height: 1.2;
+  position: relative;
 }
 
 .animated-title::after {
@@ -59,18 +70,19 @@
   position: absolute;
   left: 0;
   bottom: -4px;
-  height: 4px;
-  width: 0;
-  background: var(--accent);
+  height: 3px;
+  width: 60px;
+  background: #000;
   border-radius: 2px;
-  animation: slide-in 2s forwards;
 }
 
 .subtitle {
-  font-size: 0.75rem;
+  font-family: "Aldrich", sans-serif;
   font-weight: 400;
-  color: #555;
-  margin-top: 4px;
+  font-size: 0.7rem;
+  color: #3b76ff;
+  text-shadow: 0 1px 3px rgba(59, 118, 255, 0.4);
+  margin-top: 6px;
 }
 
 .cta {

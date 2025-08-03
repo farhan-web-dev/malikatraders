@@ -6,12 +6,12 @@ export default function Header() {
       <div className="inner">
         <div className="brand">
           <img src="/logo.png" alt="Malik Arshman Traders" className="logo" />
-          <h1 className="animated-title">
-            Malik Arshman Traders
+          <div className="title-wrap">
+            <h1 className="animated-title">Malik Arshman Traders</h1>
             <span className="subtitle">
               Your Trusted Industrial & Surgical Supplier
             </span>
-          </h1>
+          </div>
         </div>
         <div className="cta">
           <a href="#footer" className="contact-btn">
