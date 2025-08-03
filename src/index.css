@@ -6,4 +6,35 @@ body {
   color: #1f2d3a;
   line-height: 1.5;
   min-width: 320px;
+  overflow-x: hidden;
+}
+
+/* Products Section */
+.main {
+  padding: 60px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* center align the section */
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px; /* optional cap */
+  /* margin: 0 auto; */
+  padding: 16px 12px 16px 8px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
 }

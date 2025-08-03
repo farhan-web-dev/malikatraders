@@ -1,0 +1,140 @@
+:root {
+  --accent: #4f7fff;
+  --bg: #1f2d3a;
+  --radius: 12px;
+  --text-light: #d8e1ed;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-footer {
+  background: var(--bg);
+  color: var(--text-light);
+  padding: 50px 20px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.brand-col {
+  flex: 1 1 260px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  min-width: 220px;
+}
+
+.logo-placeholder {
+  width: 60px;
+  height: 60px;
+  background: var(--accent);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.brand-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tagline {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.links-col,
+.extra-col {
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+.col-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.col-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.contact-item .icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: var(--accent);
+  transition: transform var(--transition);
+}
+
+.contact-item a,
+.extra-col a,
+.contact-item span {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.contact-item a:hover,
+.extra-col a:hover {
+  color: #fff;
+}
+
+.extra-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 30px;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .brand-col {
+    margin-bottom: 20px;
+  }
+}

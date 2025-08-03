@@ -9,7 +9,7 @@
 }
 
 .site-header {
-  background: var(--bg);
+  background: white;
   padding: 12px 24px;
   position: relative;
   box-shadow: 0 8px 20px -4px var(--shadow-color);

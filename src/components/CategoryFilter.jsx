@@ -45,17 +45,12 @@ export default function CategoryFilter({ categories, onSelect }) {
     onSelect(newVal);
   };
 
-  const clear = () => {
-    setActive("");
-    onSelect("");
-  };
-
   return (
     <div className="category-wrapper container">
       <div className="header-row">
-        <div className="title">Select Categories</div>
-        <div className="show-all" onClick={clear}>
-          Show All
+        <div className="section-header">
+          <div className="title">Our Categories</div>
+          {/* optional subtitle or action could go here */}
         </div>
       </div>
       <div className="scrolling-row">

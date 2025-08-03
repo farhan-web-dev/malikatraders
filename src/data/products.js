@@ -19,19 +19,20 @@ export const products = [
     id: 1,
     name: "SKF Bearing",
     category: "Bearing",
-    image: "/images/skf-bearing.jpg",
+    image: "/assets/bearings/SKF-bearing.webp",
   },
+
   {
     id: 2,
     name: "IV Chamber",
     category: "Health Care Equipments",
-    image: "/images/iv-chamber.jpg",
+    image: "./images/iv-chamber.jpg",
   },
   {
     id: 3,
     name: "V-Belt",
     category: "Belts",
-    image: "/images/v-belt.jpg",
+    image: "/assets/belts/v-belt.png",
   },
   {
     id: 4,
@@ -51,5 +52,64 @@ export const products = [
     category: "Safety Items",
     image: "/images/safety-helmet.jpg",
   },
-  // Add more as needed
+  {
+    id: 7,
+    name: "NTN Bearing",
+    category: "Bearing",
+    image: "/assets/bearings/NTN-bearing.png",
+  },
+  {
+    id: 8,
+    name: "Roller Bearing",
+    category: "Bearing",
+    image: "/assets/bearings/Roller-bearing.webp",
+  },
+  {
+    id: 9,
+    name: "NSK Bearing",
+    category: "Bearing",
+    image: "/assets/bearings/NSK-bearing.jpg",
+  },
+  {
+    id: 10,
+    name: "Groove Ball Bearing",
+    category: "Bearing",
+    image: "/assets/bearings/Groove-Ball-bearing.webp",
+  },
+  {
+    id: 11,
+    name: "Timing Belt",
+    category: "Belts",
+    image: "/assets/belts/Timing-belt.jpeg",
+  },
+  {
+    id: 12,
+    name: "Flat Belt",
+    category: "Belts",
+    image: "/assets/belts/flat-belt.png",
+  },
+  {
+    id: 13,
+    name: "Poly V Belt",
+    category: "Belts",
+    image: "/assets/belts/poly-v-belt.png",
+  },
+  {
+    id: 14,
+    name: "Conveyor Belt",
+    category: "Belts",
+    image: "/assets/belts/conveyor-belt.png",
+  },
+  {
+    id: 15,
+    name: "Bleaching Powder",
+    category: "Chemicals",
+    image: "/assets/chemicals/bleaching-pwder.png",
+  },
+  {
+    id: 16,
+    name: "Hardness Powder",
+    category: "Chemicals",
+    image: "/assets/chemicals/hardness.png",
+  },
 ];
