@@ -13,10 +13,10 @@ export default function ProductsSection({
     : products;
 
   return (
-    <section id="products" className="main">
+    <section className="main">
       <CategoryFilter categories={categories} onSelect={onSelect} />
 
-      <div className="section-header">
+      <div id="products" className="section-header">
         <div className="title">Our Products</div>
         {/* optional subtitle or action could go here */}
       </div>

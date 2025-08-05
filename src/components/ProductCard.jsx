@@ -3,6 +3,7 @@ import "../styles/ProductCard.css";
 
 export default function ProductCard({ product, index = 0 }) {
   const [visible, setVisible] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
   const ref = useRef();
 
   useEffect(() => {
@@ -18,6 +19,8 @@ export default function ProductCard({ product, index = 0 }) {
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
   }, []);
+
+  const toggleDetails = () => setShowDetails((v) => !v);
 
   return (
     <div
@@ -37,7 +40,14 @@ export default function ProductCard({ product, index = 0 }) {
               : product.price}
           </div>
         )}
-        <button className="btn">View Details</button>
+
+        <div className={`detail ${showDetails ? "open" : ""}`}>
+          <p>{product.description}</p>
+        </div>
+
+        <button className="btn" onClick={toggleDetails}>
+          {showDetails ? "Hide Details" : "View Details"}
+        </button>
       </div>
     </div>
   );

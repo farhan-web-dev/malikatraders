@@ -40,7 +40,6 @@
   transform: translateY(-4px);
   box-shadow: 0 28px 80px -10px rgba(79, 127, 255, 0.25);
 }
-
 .image-wrap {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -49,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .image-wrap img {
@@ -107,4 +107,29 @@
 
 .btn:active {
   transform: translateY(1px);
+}
+
+/* detail area inside card */
+.detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  margin-top: 6px;
+}
+
+.detail.open {
+  max-height: 1000px; /* large enough to show full text */
+}
+
+/* full paragraph, no ellipsis */
+.detail p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  overflow: visible;
+  display: block;
+  text-overflow: unset;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
 }

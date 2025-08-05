@@ -35,10 +35,10 @@ export default function OurMission() {
     .map((s) => (s.endsWith(".") ? s : s + "."));
 
   return (
-    <section className="mission-section">
+    <section id="mission" className="mission-section">
       <div className="wrapper">
         <div className="heading-row">
-          <div className="title">Our Mission</div>
+          <div className="title-mission">Our Mission</div>
         </div>
         <div className="paragraph" ref={containerRef}>
           {sentences.map((sentence, i) => (

@@ -1,5 +1,12 @@
 import "../styles/Header.css";
 
+const NAV_ITEMS = [
+  { label: "Mission", href: "#mission" },
+  { label: "Categories", href: "#categories" },
+  { label: "Products", href: "#products" },
+  { label: "Contact", href: "#footer" },
+];
+
 export default function Header() {
   return (
     <header className="site-header">
@@ -13,11 +20,15 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <div className="cta">
-          <a href="#footer" className="contact-btn">
-            Contact Us
-          </a>
-        </div>
+        <nav className="main-nav">
+          <ul>
+            {NAV_ITEMS.map((item, i) => (
+              <li key={item.href} style={{ "--delay": `${i * 120}ms` }}>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </header>
   );

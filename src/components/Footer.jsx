@@ -11,7 +11,7 @@ export default function Footer() {
     <footer id="footer" className="site-footer">
       <div className="footer-container">
         <div className="brand-col">
-          <div className="logo-placeholder">MAT</div>
+          <img src="/logo.png" alt="Malik Arshman Traders" className="logo" />
           <div className="brand-info">
             <h3>Malik Arshman Traders</h3>
             <p className="tagline">
@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="contact-item">
             <FaWhatsapp className="icon" />
             <a
-              href="https://wa.me/921234567890"
+              href="https://wa.me/923215221993"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -7,13 +7,14 @@
 
 .mission-section {
   background: inherit;
-  padding: 80px;
+  /* margin: 30px 0 40px; */
+  padding: 0 30px 30px 50px;
   position: relative;
   overflow: hidden;
 }
 
 .wrapper {
-  padding: 16px 12px 8px 12px;
+  /* padding: 0px 0px 8px 12px; */
   /* margin: 0 ; */
   width: 90%;
   max-width: 1200px;
@@ -29,14 +30,15 @@
   align-items: baseline;
 }
 
-.title {
+.title-mission {
   font-size: 1.9rem;
   font-weight: 700;
   position: relative;
   color: #1f2d3a;
+  padding-left: 40px;
 }
 
-.title::after {
+.title-mission::after {
   content: "";
   display: block;
   width: 90px;

@@ -31,7 +31,7 @@ const ICON_MAP = {
   "Laboratory Equipment": GiTestTubes,
   "Lighting Equipment": MdLight,
   "Mechanical Items": FaScrewdriverWrench,
-  "Fabrication Work": LuFrame,
+  // "Fabrication Work": LuFrame,
   "Safety Items": AiOutlineSafetyCertificate,
   "Oil & Lubricants": MdOutlineOilBarrel,
 };
@@ -46,7 +46,7 @@ export default function CategoryFilter({ categories, onSelect }) {
   };
 
   return (
-    <div className="category-wrapper container">
+    <div id="categories" className="category-wrapper container">
       <div className="header-row">
         <div className="section-header">
           <div className="title">Our Categories</div>
@@ -60,7 +60,13 @@ export default function CategoryFilter({ categories, onSelect }) {
             <button
               key={c}
               className={`category-btn ${active === c ? "active" : ""}`}
-              onClick={() => handleSelect(c)}
+              onClick={() => {
+                handleSelect(c); // Set active category
+                // Scroll smoothly to #products
+                document.getElementById("products")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
               aria-pressed={active === c}
             >
               <div className="icon-wrapper">
