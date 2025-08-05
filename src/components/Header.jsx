@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Header.css";
 
 const NAV_ITEMS = [
@@ -8,9 +10,12 @@ const NAV_ITEMS = [
 ];
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="site-header">
       <div className="inner">
+        {/* Logo and Title */}
         <div className="brand">
           <img src="/logo.png" alt="Malik Arshman Traders" className="logo" />
           <div className="title-wrap">
@@ -20,15 +25,28 @@ export default function Header() {
             </span>
           </div>
         </div>
-        <nav className="main-nav">
+
+        {/* Desktop Nav */}
+        <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
           <ul>
             {NAV_ITEMS.map((item, i) => (
               <li key={item.href} style={{ "--delay": `${i * 120}ms` }}>
-                <a href={item.href}>{item.label}</a>
+                <a href={item.href} onClick={() => setMenuOpen(false)}>
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
         </nav>
+
+        {/* Hamburger Icon (Always on Right) */}
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle Menu"
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
     </header>
   );

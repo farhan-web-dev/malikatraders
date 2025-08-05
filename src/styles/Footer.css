@@ -144,3 +144,87 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 0 20px;
+  }
+
+  .brand-col {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .brand-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+    max-width: 280px;
+  }
+
+  .col-title {
+    font-size: 0.9rem;
+    margin-top: 16px;
+  }
+
+  .col-title::after {
+    margin: 8px auto 0;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.85rem;
+  }
+
+  .contact-item .icon {
+    font-size: 1.2rem;
+  }
+
+  .extra-col a,
+  .contact-item a,
+  .contact-item span {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+    padding-top: 12px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .brand-info h3 {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .contact-item {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
