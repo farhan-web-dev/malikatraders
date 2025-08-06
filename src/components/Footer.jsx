@@ -26,12 +26,12 @@ export default function Footer() {
           <div className="col-title">Contact</div>
           <div className="contact-item">
             <FaPhoneAlt className="icon" />
-            <a href="tel:+921234567890">+92 123 4567890</a>
+            <a href="tel:+923215221993">+92 321 5221993</a>
           </div>
           <div className="contact-item">
             <FaWhatsapp className="icon" />
             <a
-              href="https://wa.me/923215221993"
+              href={`https://wa.me/923215221993?text=Hi I Found your contact on Malik Arshman Traders website.`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,6 +47,13 @@ export default function Footer() {
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
             <span>Karachi, Pakistan</span>
+          </div>
+          <div className="contact-item">
+            <FaMapMarkerAlt className="icon" />
+            <span>
+              Shop No 01,Opposite Meezan Bank,Main Allaabad Road Westridge III
+              Rawalpindi Cantt
+            </span>
           </div>
         </div>
 

@@ -54,6 +54,7 @@
   color: #2d3e55;
   position: relative;
   overflow: hidden;
+  padding-left: 40px;
 }
 
 .mission-sentence {
