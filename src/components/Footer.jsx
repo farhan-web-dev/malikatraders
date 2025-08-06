@@ -46,13 +46,16 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
-            <span>Karachi, Pakistan</span>
+            <span>
+              Head Office: M-6, M-Floor, Minah Avenue, Opp, Airport,Karachi,
+              Pakistan
+            </span>
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
             <span>
-              Shop No 01,Opposite Meezan Bank,Main Allaabad Road Westridge III
-              Rawalpindi Cantt
+              Regional Office: Shop No 01,Opposite Meezan Bank,Main Allaabad
+              Road Westridge III Rawalpindi Cantt
             </span>
           </div>
         </div>
