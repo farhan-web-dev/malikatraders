@@ -1,9 +1,9 @@
 export const categories = [
-  "Bearing",
+  "Electrical",
   "Belts",
+  "Bearing",
   "Chemicals",
   "Design & Printing",
-  "Electrical",
   "Health Care Equipments",
   "Housekeeping Items",
   "Laboratory Equipment",

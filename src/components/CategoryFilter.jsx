@@ -21,11 +21,11 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import "../styles/CategoryFilter.css";
 
 const ICON_MAP = {
+  Electrical: FiTool,
   Bearing: GiAutoRepair, // example without icon; will fallback
   Belts: MdConveyorBelt, // you can swap with a more appropriate icon if desired
   Chemicals: GiAcid,
   "Design & Printing": FaPaintBrush,
-  Electrical: FiTool,
   "Health Care Equipments": MdLocalHospital,
   "Housekeeping Items": GiShop,
   "Laboratory Equipment": GiTestTubes,

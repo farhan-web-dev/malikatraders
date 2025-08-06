@@ -35,7 +35,7 @@
   font-weight: 700;
   position: relative;
   color: #1f2d3a;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .title-mission::after {
@@ -54,7 +54,7 @@
   color: #2d3e55;
   position: relative;
   overflow: hidden;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .mission-sentence {

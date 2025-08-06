@@ -11,7 +11,11 @@ export default function Footer() {
     <footer id="footer" className="site-footer">
       <div className="footer-container">
         <div className="brand-col">
-          <img src="/logo.png" alt="Malik Arshman Traders" className="logo" />
+          <img
+            src="/logo.png"
+            alt="Malik Arshman Traders"
+            className="footer-logo"
+          />
           <div className="brand-info">
             <h3>Malik Arshman Traders</h3>
             <p className="tagline">
