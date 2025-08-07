@@ -30,7 +30,14 @@ export default function Footer() {
           <div className="col-title">Contact</div>
           <div className="contact-item">
             <FaPhoneAlt className="icon" />
-            <a href="tel:+923215221993">+92 321 5221993</a>
+            <div className="group">
+              <a href="tel:+923215221993">
+                <b>Karachi:</b>+92 321 5221993
+              </a>
+              <a href="tel:+923215359436">
+                <b>Rawalpindi:</b>03215359436
+              </a>
+            </div>
           </div>
           <div className="contact-item">
             <FaWhatsapp className="icon" />
@@ -50,17 +57,16 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="icon" />
-            <span>
-              Head Office: M-6, M-Floor, Minah Avenue, Opp, Airport,Karachi,
-              Pakistan
-            </span>
-          </div>
-          <div className="contact-item">
-            <FaMapMarkerAlt className="icon" />
-            <span>
-              Regional Office: Shop No 01,Opposite Meezan Bank,Main Allaabad
-              Road Westridge III Rawalpindi Cantt
-            </span>
+            <div className="group">
+              <span>
+                <b>Head Office:</b> M-6, M-Floor, Minah Avenue, Opp,
+                Airport,Karachi, Pakistan
+              </span>
+              <span>
+                <b>Regional Office:</b> Shop No 01,Opposite Meezan Bank,Main
+                Allaabad Road Westridge III Rawalpindi Cantt
+              </span>
+            </div>
           </div>
         </div>
 

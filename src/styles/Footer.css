@@ -91,8 +91,15 @@
   margin-top: 6px;
 }
 
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .contact-item {
   display: flex;
+
   align-items: center;
   gap: 10px;
   margin: 8px 0;
