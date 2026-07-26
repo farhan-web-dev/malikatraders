@@ -14,13 +14,15 @@ import {
   MdLight,
   MdOutlineOilBarrel,
 } from "react-icons/md";
-import { GiAutoRepair, GiAcid, GiTestTubes } from "react-icons/gi";
+import { GiAutoRepair, GiAcid, GiTestTubes, GiFactory, GiFlame } from "react-icons/gi";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import { LuFrame } from "react-icons/lu";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import "../styles/CategoryFilter.css";
 
 const ICON_MAP = {
+  "Boiler O&M Services": GiFactory,
+  "Boiler Fuel Supply": GiFlame,
   Electrical: FiTool,
   Bearing: GiAutoRepair, // example without icon; will fallback
   Belts: MdConveyorBelt, // you can swap with a more appropriate icon if desired

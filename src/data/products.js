@@ -1,4 +1,6 @@
 export const categories = [
+   "Boiler Fuel Supply",
+  "Boiler O&M Services",
   "Electrical",
   "Belts",
   "Bearing",
@@ -15,6 +17,109 @@ export const categories = [
 ];
 
 export const products = [
+  {
+    id: 101,
+    name: "Wood Chips & Firewood",
+    category: "Boiler Fuel Supply",
+    image: "/assets/wood-chips-firewood.png",
+    description:
+      "Clean-burning, optimally dried wood chips with low moisture levels, ideal for eco-friendly biomass steam generation.",
+    whyChooseUs: [
+      "Guaranteed Bulk Availability: Continuous supply tracking ensuring your plant never runs out.",
+      "Quality Assured Fuels: Moisture and calorific value tested for maximum thermal efficiency.",
+      "On-Time Logistics: Dedicated fleet delivering fuel directly to factory sites across Pakistan.",
+      "Competitive Market Rates: Flexible pricing optimized for large-scale operations."
+    ]
+  },
+  {
+    id: 102,
+    name: "Rice Husk & Husk Powder",
+    category: "Boiler Fuel Supply",
+    image: "/assets/rice-husk.png",
+    description:
+      "A highly cost-effective and sustainable biomass fuel widely trusted for continuous industrial heating.",
+    whyChooseUs: [
+      "Guaranteed Bulk Availability",
+      "Quality Assured Fuels",
+      "On-Time Logistics",
+      "Competitive Market Rates"
+    ]
+  },
+  {
+    id: 103,
+    name: "Cow Dung Briquettes / Waste",
+    category: "Boiler Fuel Supply",
+    image: "/assets/cow-dung-briquettes.png",
+    description:
+      "High-density, fully processed bio-fuel providing stable combustion and an economical alternative for eco-conscious plants.",
+    whyChooseUs: [
+      "High-density bio-fuel",
+      "Stable combustion",
+      "Economical alternative",
+      "Eco-conscious choice"
+    ]
+  },
+  {
+    id: 104,
+    name: "Imported Coal (South African / Indonesian)",
+    category: "Boiler Fuel Supply",
+    image: "/assets/imported-coal.png",
+    description:
+      "Premium grade industrial coal with exceptionally high calorific value (GCV) and low ash content.",
+    whyChooseUs: [
+      "Exceptionally High Calorific Value (GCV)",
+      "Low Ash Content",
+      "Guaranteed Bulk Availability",
+      "On-Time Fleet Delivery"
+    ]
+  },
+  {
+    id: 105,
+    name: "Local Coal (Balochistan / Sindh)",
+    category: "Boiler Fuel Supply",
+    image: "/assets/local-coal.png",
+    description:
+      "Cost-effective, high-grade local coal varieties sourced directly from reliable mines for industrial stokers.",
+    whyChooseUs: [
+      "Sourced directly from reliable mines",
+      "High-grade local coal varieties",
+      "Cost-effective pricing",
+      "Reliable delivery across Pakistan"
+    ]
+  },
+    {
+    id: 106,
+    name: "Boiler Operation & Maintenance (O&M) Services",
+    category: "Boiler O&M Services",
+    image: "/assets/boiler-om-service.png",
+    description:
+      "Safe, Certified, and Uninterrupted Steam Solutions by Malik Arshman Traders. Turnkey operational management, certified engineers, 100% compliance, and zero downtime.",
+    isService: true,
+    subtitle: "Safe, Certified, and Uninterrupted Steam Solutions",
+    whyOutsource: [
+      "Certified Manpower: 24/7 placement of govt-certified 1st & 2nd Class Boiler Engineers.",
+      "100% Compliance: We handle all official inspections, paperwork, and safety audits.",
+      "Cost Efficiency: Reduces fuel waste, prevents breakdowns, and lowers labor overheads.",
+      "Zero Downtime: Continuous monitoring for smooth, round-the-clock steam supply."
+    ],
+    scopeOfServices: [
+      "1. Daily Operations: Safe startup, shutdown, pressure control, and logbook maintenance.",
+      "2. Water Treatment: Regular feedwater testing and chemical dosing to prevent scaling.",
+      "3. Preventive Maintenance: Routine checks of burners, valves, and safety pumps.",
+      "4. Emergency Support: Immediate troubleshooting during unexpected breakdown failures."
+    ],
+    industriesServed: [
+      "Textiles & Garments",
+      "Pharmaceuticals & Chemicals",
+      "Food & Beverages",
+      "Rice & Sugar Mills"
+    ],
+    contactInfo: {
+      karachi: "M-6, M-Floor, Minah Avenue, Opp. Airport.",
+      rawalpindi: "Shop No 01, Opp. Meezan Bank, Main Allahabad Road, Westridge III.",
+      email: "info@malikarshmantraders.com"
+    }
+  },
   {
     id: 1,
     name: "SKF Bearing",

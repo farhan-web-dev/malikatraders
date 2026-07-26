@@ -3,9 +3,11 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Header.css";
 
 const NAV_ITEMS = [
+  { label: "Boiler Fuels", href: "#categories" },
+  { label: "Boiler Services", href: "#categories" },
   { label: "Mission", href: "#mission" },
   { label: "Categories", href: "#categories" },
-  { label: "Products", href: "#products" },
+  { label: "Products & Fuels", href: "#products" },
   { label: "Contact", href: "#footer" },
 ];
 
@@ -21,7 +23,7 @@ export default function Header() {
           <div className="title-wrap">
             <h1 className="animated-title">Malik Arshman Traders</h1>
             <span className="subtitle">
-              Your Trusted Industrial & Surgical Supplier
+              Turnkey Boiler O&M Services, Industrial Fuel & Supplies
             </span>
           </div>
         </div>

@@ -3,6 +3,18 @@ import "../styles/Banner.css";
 
 const slides = [
   {
+    src: "/boiler-service-banner.png",
+    alt: "Boiler Operation & Maintenance Services",
+    title: "Boiler O&M Services",
+    subtitle: "Safe, Certified & Uninterrupted Steam Solutions by Malik Arshman Traders",
+  },
+  {
+    src: "/boiler-fuel-banner.png",
+    alt: "Premium Industrial Boiler Fuel Supply",
+    title: "Industrial Boiler Fuel Supply",
+    subtitle: "Reliable, High-Efficiency Solid & Biomass Fuel Supply Across Pakistan",
+  },
+  {
     src: "/belt-banner.png",
     alt: "Belt banner",
     title: "Industrial Belts",

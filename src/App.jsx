@@ -10,7 +10,7 @@ import OurMission from "./components/OurMission";
 import WhatsAppButton from "./components/Whatsapp";
 
 function App() {
-  const [selected, setSelected] = useState("Electrical");
+  const [selected, setSelected] = useState("Boiler Fuel Supply");
 
   return (
     <div>

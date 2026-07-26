@@ -59,12 +59,10 @@ export default function Footer() {
             <FaMapMarkerAlt className="icon" />
             <div className="group">
               <span>
-                <b>Head Office:</b> M-6, M-Floor, Minah Avenue, Opp,
-                Airport,Karachi, Pakistan
+                <b>Karachi Office:</b> M-6, M-Floor, Minah Avenue, Opp. Airport, Karachi, Pakistan
               </span>
               <span>
-                <b>Regional Office:</b> Shop No 01,Opposite Meezan Bank,Main
-                Allaabad Road Westridge III Rawalpindi Cantt
+                <b>Rawalpindi Office:</b> Shop No 01, Opp. Meezan Bank, Main Allahabad Road, Westridge III, Rawalpindi
               </span>
             </div>
           </div>
